@@ -1,0 +1,135 @@
+#sign{
+  border-radius: 30px;
+  width:30%;
+  background-color: red;
+  border-color:red ;
+}
+#ho{
+  color: red;
+  font-size: 19px;
+  margin-left: 10px;
+}
+#con{
+  color: red;
+  font-size: 19px;
+  margin-left: 10px;
+}
+#ho:hover{
+  color: white;
+  background-color: red;
+}
+#con:hover{
+  color: white;
+  background-color: red;
+}
+li a:hover{
+    text-decoration: underline;
+}
+#log
+{
+    color:white;
+    font-size: 19px;
+    background-color: red;
+}
+#log:hover{
+    background-color: white;
+    color:red;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid dodgerblue;
+  }
+.foot-container
+{
+
+    background-color: tomato;
+    transform: skewY(-2deg);
+    border-top-left-radius: 50px;
+}
+footer h3{
+  transform: skewY(2deg);
+} 
+
+footer ul li a{
+  color: blue;
+  transform: skewY(2deg);
+  font-size: large;
+}
+footer ul li a:hover{
+  text-decoration: underline;
+  background-color: whitesmoke;
+}
+footer ul li{
+  list-style-type: none;
+  text-align: center;
+}
+footer ul{
+  transform: skewY(2deg);
+  text-align: center;
+}
+footer img{
+  transform: skewY(2deg);
+  width: 50%;
+  float: left;
+}
+footer h2{
+  transform: skewY(2deg);
+  color:red;
+}
+.foot-container
+{
+  background-color: whitesmoke;
+}
+.foot-container:before
+{
+  content: "";
+  width:40px;
+  height: 40px;
+  position: absolute;
+  right:0;
+  top:-39px;
+  background-color: whitesmoke;
+  z-index: -2;
+}
+.foot-container:after
+{
+  content: "";
+  width:80px;
+  height: 80px;
+  border-radius: 90%;
+  position: absolute;
+  right:0;
+  top:-80px;
+  border-radius: 50%;
+  background-color: white;
+}
+footer h6{
+  transform: skewY(2deg);
+  background-color: whitesmoke;
+  
+}
+footer hr{
+  transform: skewY(2deg);
+}

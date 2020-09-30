@@ -1,0 +1,49 @@
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+footer img{
+    width:30%;
+}
+.foot{
+    background-color: linen;
+    transform: skewX(-3deg);
+    border-top-right-radius: 50px;
+}
+.foot h5{
+    transform: skewX(3deg);
+}
+.foot h3{
+    transform: skewX(3deg);
+}
+.foot ul li a{
+    transform: skewX(3deg);
+}
+.foot img{
+    transform: skewX(3deg);
+}
+.foot::before{
+    width: 50px;
+    height: 50px;
+    content: "";
+    position: absolute;
+    top:-39px;
+    left:0;
+    background-color: linen;
+}
+.foot::after{
+    width: 80px;
+    height: 80px;
+    content: "";
+    position: absolute;
+    top:-80px;
+    left:0;
+    border-radius: 100%;
+    background-color: white;
+}
+#menu  a{
+    color: red;
+}
+#menu  a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Contact Us</title>
+    <style>
+      /* Set the size of the div element that contains the map */
+     #map {
+       height: 400px;  /* The height is 400 pixels */
+       width: 100%;  /* The width is the width of the web page */
+      }
+   </style>
+  </head>
+  <body>
+    <h1 align="Center"><i class='fas fa-clinic-medical' style='font-size:36px;color:black; padding-top:5px;'></i>&nbsp;&nbsp;S.P.G. Medical Centre</h1>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h2 class="navbar-brand" >Contact Us</h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="login.php">Login</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="sign.php"  >SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </nav><br>
+      <div id="map"></div>
+        <script>
+            // Initialize and add the map
+            function myMap() {
+              // The location of Uluru
+              var uluru = {lat: 21.7679, lng: 78.8718};
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 4, center: uluru});
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg">
+                <h6 align="Center">Do you have any questions? Please do not hesitate to contact us directly. We will contact you as soon as possible. </h6><br>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputName">Your Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="nameHelp" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Your Email Address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputSubject">Subject</label>
+                      <textarea class="form-control" id="exampleInputTextArea" placeholder="Write Something Here..."required style="height:200px;"></textarea>
+                    </div>
+                    <center><button type="submit" class="btn btn-primary">Submit</button></center>
+                  </form>
+            </div><br><br>
+            <div class="col-lg"><br><br><br><br>
+                <h3 align="center"><u>Contacts</u></h3>
+
+                <center><i align="center" class='fas fa-map-marker-alt' style='font-size:36px; color:red'></i></center>
+                <center><h5> &nbsp;&nbsp;Location : Prayagraj, Uttar Pradesh.</h5></center><br>
+                <center><i class='fas fa-phone-volume' style='font-size:36px; color:red'></i></center>
+                <center><h5>Contact : +91 1234567890</h5></center><br>
+                <center><i class="fa fa-envelope"style="font-size:30px; color:red;" aria-hidden="true"></i></center>
+                <center> <h5 align="center" style="font-size: 18px;"> Email :<a href="mailto:spg@gmailcom?"> spg@gmail.com</a> </h5></center>
+            </div>
+        </div>
+    </div><br><hr>
+    <footer>
+        <h6 align="Center">&copy; Copyright <script>document.write(new Date().getFullYear());</script>. All Rights Reserved.</h6>
+        <h6 align="center">Made with &#10084; in India.</h6><br>
+    </footer>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?callback=myMap">
+    </script>">
+ </body>
+</html>
